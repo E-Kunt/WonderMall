@@ -1,0 +1,90 @@
+﻿@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:"宋体",Arial, Helvetica, sans-serif;
+	font-size:26px;
+	color:#fff;
+	background:#295a85;
+}
+#login{
+	width:484px;
+	height:514px;
+	margin:5% auto;
+	position:relative;
+	background:url(../images/bg.jpg);
+}
+.write{
+	width:303px;
+	position:absolute;
+	top:220px;
+	left:90px;
+}
+.user{
+	width:303px;
+	height:50px;
+	background:url(../images/user.jpg) left no-repeat;
+}
+.password{
+	width:303px;
+	height:50px;
+	background:url(../images/password.jpg) left no-repeat;
+}
+.user,.password,.yzpassword{
+	margin-top:7px;
+}
+.yzpassword{
+	height:50px;
+}
+input.yz{
+	line-height:55px;
+	outline:none;
+	width:162px;
+	height:50px;
+	border:none;
+	font-size:26px;
+	color:#89a9b2;
+	float:left;
+	background:url(../images/yz.jpg) no-repeat;
+}
+input.field,input.field1{
+	text-align:left;
+    line-height:50px;
+	outline:none;
+    font-size:26px;
+	color:#fff;
+	width:240px;
+	height:50px;
+	margin-left:63px;
+	background:url(../images/body.jpg) no-repeat;
+	border:none;
+}
+.number{
+	width:137px;
+	height:50px;
+	float:right;
+	background:url(../images/number.jpg) no-repeat;
+}
+.img
+{
+    margin:5px 0 0 20px;
+    
+    }
+.bt{
+	width:303px;
+}
+.bt input{
+	outline:none;
+	width:132px;
+	height:50px;
+	border:none;
+	cursor:pointer;
+	margin:5px 0 0 85px;
+	background:url(../images/bt.png) no-repeat;
+}
+.bt input:active{
+	background:url(../images/hbt.png) no-repeat;
+}

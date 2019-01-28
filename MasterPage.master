@@ -1,0 +1,172 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <!--top-header-->
+    <div class="top-header">
+        <div class="container">
+            <div class="top-header-main">
+                <div class="col-md-6 top-header-left">
+                    <div class="drop">
+                        <ul>
+                            <li class="label"><a href="index.aspx">首页</a></li>
+                            <li class="label"><a href="<%=btnurl %>">
+                                <%=btn %></a></li>
+                            <li class="label"><a href="userReg.aspx">注册</a></li>
+                            <li class="label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%=tip %></li>
+                        </ul>
+                        <div class="clearfix">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 top-header-left">
+                    <div class="cart box_1">
+                        <table class="style1">
+                            <tr>
+                                <td>
+                                    <a href="orders.aspx">
+                                        <div class="total">
+                                            <%--<span class="simpleCart_total"></span>--%>
+                                        </div>
+                                        <img src="images/ic_list.png" alt="" height="18" width="24" />
+                                    </a>
+                                    <p>
+                                        <a href="orders.aspx" class="simpleCart_empty">我的订单</a></p>
+                                </td>
+                                <td>
+                                    <a href="check.aspx">
+                                        <div class="total">
+                                            <%--<span class="simpleCart_total"></span>--%>
+                                        </div>
+                                        <img src="images/cart-1.png" alt="" />
+                                    </a>
+                                    <p>
+                                        <a href="check.aspx" class="simpleCart_empty">购物车</a></p>
+                                    <div class="clearfix">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="clearfix">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--top-header-->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    <!--information-starts-->
+    <div class="information">
+        <div class="container">
+            <div class="infor-top">
+                <div class="col-md-3 infor-left">
+                    <h3>
+                        关注我们</h3>
+                    <ul>
+                        <li><a href="#"><span class="fb"></span>
+                            <h6>
+                                Facebook</h6>
+                        </a></li>
+                        <li><a href="#"><span class="twit"></span>
+                            <h6>
+                                Twitter</h6>
+                        </a></li>
+                        <li><a href="#"><span class="google"></span>
+                            <h6>
+                                Google+</h6>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 infor-left">
+                    <h3>
+                        相关推荐</h3>
+                    <ul>
+                        <li><a target="_blank" href="http://www.quwan.com/">
+                            <p>
+                                趣玩网</p>
+                        </a></li>
+                        <li><a target="_blank" href="http://www.jd.com/">
+                            <p>
+                                京东商城</p>
+                        </a></li>
+                        <li><a target="_blank" href="http://www.wowsai.com/">
+                            <p>
+                                哇噻网</p>
+                        </a></li>
+                        <li><a target="_blank" href="http://www.liveport.cn/">
+                            <p>
+                                优集品</p>
+                        </a></li>
+                        <li><a target="_blank" href="http://www.zeepin.com/">
+                            <p>
+                                智品网</p>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 infor-left">
+                    <h3>
+                        账户信息</h3>
+                    <ul>
+                        <li><a href="Change.aspx">
+                            <p>
+                                修改用户资料</p>
+                        </a></li>
+                        <li><a href="orders.aspx">
+                            <p>
+                                我的订单</p>
+                        </a></li>
+                        <li><a href="#">
+                            <p>
+                                客户服务</p>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 infor-left">
+                    <h3>
+                        本店信息</h3>
+                    <h4>
+                        淘奇网, <span>韶关浈江区,</span> 大学路xxx号.</h4>
+                    <h5>
+                        135 123 45678</h5>
+                    <p>
+                        <a href="mailto:123456789@qq.com">123456789@qq.com</a></p>
+                </div>
+                <div class="clearfix">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--information-end-->
+    <!--footer-starts-->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="col-md-6 footer-left">
+                </div>
+                <div class="col-md-6 footer-right">
+                    <p>
+                        Copyright &copy; 2015.Company name All rights reserved.淘奇网</p>
+                </div>
+                <div class="clearfix">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-end-->
+    </form>
+</body>
+</html>
